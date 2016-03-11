@@ -9,15 +9,53 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-
+@property(nonatomic,strong) UILabel *titleNetWorkStatus;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    [self observeNetWorking];
+
+
     // Do any additional setup after loading the view, typically from a nib.
 }
+
+-(UILabel *)titleNetWorkStatus{
+
+    if (!_titleNetWorkStatus) {
+        _titleNetWorkStatus = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 44)];
+        _titleNetWorkStatus.textAlignment = NSTextAlignmentCenter;
+        _titleNetWorkStatus.backgroundColor = [UIColor purpleColor];
+        _titleNetWorkStatus.text = @"世界最遥远的距离就是没有网路。。。";
+        _titleNetWorkStatus.textColor = [UIColor redColor];
+    }
+
+    return _titleNetWorkStatus;
+}
+
+
+-(void)observeNetWorking{
+
+         [[AFNetworkReachabilityManager sharedManager] setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
+             NSLog(@" start %zd",status);
+             if (status > 0) {
+                 [self.titleNetWorkStatus removeFromSuperview];
+             }else{
+
+                 [self.view addSubview:self.titleNetWorkStatus];
+
+             }
+
+
+         }];
+
+
+}
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

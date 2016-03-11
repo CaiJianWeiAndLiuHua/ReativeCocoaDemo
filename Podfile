@@ -5,5 +5,6 @@
 
 target 'ReativeCocoaDemo' do
 pod 'ReactiveCocoa', '~> 2.5'
+pod 'AFNetworking', '~> 3.0.4'
 end
 
