@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		190C98FEAFCCF355B108C0DD /* libPods-ReativeCocoaDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32E6634DB51BAB0F018E5CAB /* libPods-ReativeCocoaDemo.a */; };
 		788F20C81C9328DA00B0A86A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 788F20C71C9328DA00B0A86A /* main.m */; };
 		788F20CB1C9328DA00B0A86A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 788F20CA1C9328DA00B0A86A /* AppDelegate.m */; };
 		788F20CE1C9328DA00B0A86A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 788F20CD1C9328DA00B0A86A /* ViewController.m */; };
@@ -14,9 +15,11 @@
 		788F20D41C9328DA00B0A86A /* ReativeCocoaDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 788F20D21C9328DA00B0A86A /* ReativeCocoaDemo.xcdatamodeld */; };
 		788F20D61C9328DA00B0A86A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 788F20D51C9328DA00B0A86A /* Assets.xcassets */; };
 		788F20D91C9328DA00B0A86A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 788F20D71C9328DA00B0A86A /* LaunchScreen.storyboard */; };
+		788F20E11C93297400B0A86A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 788F20E01C93297400B0A86A /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		32E6634DB51BAB0F018E5CAB /* libPods-ReativeCocoaDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReativeCocoaDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		788F20C31C9328DA00B0A86A /* ReativeCocoaDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReativeCocoaDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		788F20C71C9328DA00B0A86A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		788F20C91C9328DA00B0A86A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -28,6 +31,9 @@
 		788F20D51C9328DA00B0A86A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		788F20D81C9328DA00B0A86A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		788F20DA1C9328DA00B0A86A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		788F20E01C93297400B0A86A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AF73C0D84A6263D28060ABB6 /* Pods-ReativeCocoaDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReativeCocoaDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReativeCocoaDemo/Pods-ReativeCocoaDemo.release.xcconfig"; sourceTree = "<group>"; };
+		EA1A372A15008AB02A82B72B /* Pods-ReativeCocoaDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReativeCocoaDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReativeCocoaDemo/Pods-ReativeCocoaDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				190C98FEAFCCF355B108C0DD /* libPods-ReativeCocoaDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F4FB23A7979AE669F2CC314 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				32E6634DB51BAB0F018E5CAB /* libPods-ReativeCocoaDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		674756D93AFC15FC838B09C5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EA1A372A15008AB02A82B72B /* Pods-ReativeCocoaDemo.debug.xcconfig */,
+				AF73C0D84A6263D28060ABB6 /* Pods-ReativeCocoaDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		788F20BA1C9328DA00B0A86A = {
 			isa = PBXGroup;
 			children = (
 				788F20C51C9328DA00B0A86A /* ReativeCocoaDemo */,
 				788F20C41C9328DA00B0A86A /* Products */,
+				674756D93AFC15FC838B09C5 /* Pods */,
+				2F4FB23A7979AE669F2CC314 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,6 +95,7 @@
 				788F20D71C9328DA00B0A86A /* LaunchScreen.storyboard */,
 				788F20DA1C9328DA00B0A86A /* Info.plist */,
 				788F20D21C9328DA00B0A86A /* ReativeCocoaDemo.xcdatamodeld */,
+				788F20E01C93297400B0A86A /* Images.xcassets */,
 				788F20C61C9328DA00B0A86A /* Supporting Files */,
 			);
 			path = ReativeCocoaDemo;
@@ -89,9 +116,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 788F20DD1C9328DA00B0A86A /* Build configuration list for PBXNativeTarget "ReativeCocoaDemo" */;
 			buildPhases = (
+				F5F7A63943974CC02D4AB1DC /* Check Pods Manifest.lock */,
 				788F20BF1C9328DA00B0A86A /* Sources */,
 				788F20C01C9328DA00B0A86A /* Frameworks */,
 				788F20C11C9328DA00B0A86A /* Resources */,
+				0C53377C823021A0C5A9467B /* Embed Pods Frameworks */,
+				4CF8AB1B906B82FA6D6346BE /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -140,12 +170,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				788F20D91C9328DA00B0A86A /* LaunchScreen.storyboard in Resources */,
+				788F20E11C93297400B0A86A /* Images.xcassets in Resources */,
 				788F20D61C9328DA00B0A86A /* Assets.xcassets in Resources */,
 				788F20D11C9328DA00B0A86A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C53377C823021A0C5A9467B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReativeCocoaDemo/Pods-ReativeCocoaDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4CF8AB1B906B82FA6D6346BE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReativeCocoaDemo/Pods-ReativeCocoaDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5F7A63943974CC02D4AB1DC /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		788F20BF1C9328DA00B0A86A /* Sources */ = {
@@ -263,9 +342,12 @@
 		};
 		788F20DE1C9328DA00B0A86A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA1A372A15008AB02A82B72B /* Pods-ReativeCocoaDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = ReativeCocoaDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jwlh.ReativeCocoaDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -274,9 +356,12 @@
 		};
 		788F20DF1C9328DA00B0A86A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF73C0D84A6263D28060ABB6 /* Pods-ReativeCocoaDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = ReativeCocoaDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jwlh.ReativeCocoaDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -302,6 +387,7 @@
 				788F20DF1C9328DA00B0A86A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
