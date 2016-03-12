@@ -16,6 +16,10 @@
 		788F20D61C9328DA00B0A86A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 788F20D51C9328DA00B0A86A /* Assets.xcassets */; };
 		788F20D91C9328DA00B0A86A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 788F20D71C9328DA00B0A86A /* LaunchScreen.storyboard */; };
 		788F20E11C93297400B0A86A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 788F20E01C93297400B0A86A /* Images.xcassets */; };
+		788F20EC1C93F9DE00B0A86A /* Photos+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 788F20E51C93F9DE00B0A86A /* Photos+CoreDataProperties.m */; };
+		788F20ED1C93F9DE00B0A86A /* Photos.m in Sources */ = {isa = PBXBuildFile; fileRef = 788F20E71C93F9DE00B0A86A /* Photos.m */; };
+		788F20EE1C93F9DE00B0A86A /* Person+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 788F20E91C93F9DE00B0A86A /* Person+CoreDataProperties.m */; };
+		788F20EF1C93F9DE00B0A86A /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 788F20EB1C93F9DE00B0A86A /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,14 @@
 		788F20D81C9328DA00B0A86A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		788F20DA1C9328DA00B0A86A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		788F20E01C93297400B0A86A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		788F20E41C93F9DE00B0A86A /* Photos+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Photos+CoreDataProperties.h"; sourceTree = "<group>"; };
+		788F20E51C93F9DE00B0A86A /* Photos+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Photos+CoreDataProperties.m"; sourceTree = "<group>"; };
+		788F20E61C93F9DE00B0A86A /* Photos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photos.h; sourceTree = "<group>"; };
+		788F20E71C93F9DE00B0A86A /* Photos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photos.m; sourceTree = "<group>"; };
+		788F20E81C93F9DE00B0A86A /* Person+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Person+CoreDataProperties.h"; sourceTree = "<group>"; };
+		788F20E91C93F9DE00B0A86A /* Person+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Person+CoreDataProperties.m"; sourceTree = "<group>"; };
+		788F20EA1C93F9DE00B0A86A /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		788F20EB1C93F9DE00B0A86A /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		AF73C0D84A6263D28060ABB6 /* Pods-ReativeCocoaDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReativeCocoaDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReativeCocoaDemo/Pods-ReativeCocoaDemo.release.xcconfig"; sourceTree = "<group>"; };
 		EA1A372A15008AB02A82B72B /* Pods-ReativeCocoaDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReativeCocoaDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReativeCocoaDemo/Pods-ReativeCocoaDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,15 +98,16 @@
 		788F20C51C9328DA00B0A86A /* ReativeCocoaDemo */ = {
 			isa = PBXGroup;
 			children = (
+				788F20E31C93F92F00B0A86A /* Model */,
 				788F20C91C9328DA00B0A86A /* AppDelegate.h */,
 				788F20CA1C9328DA00B0A86A /* AppDelegate.m */,
 				788F20CC1C9328DA00B0A86A /* ViewController.h */,
 				788F20CD1C9328DA00B0A86A /* ViewController.m */,
 				788F20CF1C9328DA00B0A86A /* Main.storyboard */,
 				788F20D51C9328DA00B0A86A /* Assets.xcassets */,
+				788F20D21C9328DA00B0A86A /* ReativeCocoaDemo.xcdatamodeld */,
 				788F20D71C9328DA00B0A86A /* LaunchScreen.storyboard */,
 				788F20DA1C9328DA00B0A86A /* Info.plist */,
-				788F20D21C9328DA00B0A86A /* ReativeCocoaDemo.xcdatamodeld */,
 				788F20E01C93297400B0A86A /* Images.xcassets */,
 				788F20C61C9328DA00B0A86A /* Supporting Files */,
 			);
@@ -107,6 +120,29 @@
 				788F20C71C9328DA00B0A86A /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		788F20E21C93F92100B0A86A /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				788F20E41C93F9DE00B0A86A /* Photos+CoreDataProperties.h */,
+				788F20E51C93F9DE00B0A86A /* Photos+CoreDataProperties.m */,
+				788F20E61C93F9DE00B0A86A /* Photos.h */,
+				788F20E71C93F9DE00B0A86A /* Photos.m */,
+				788F20E81C93F9DE00B0A86A /* Person+CoreDataProperties.h */,
+				788F20E91C93F9DE00B0A86A /* Person+CoreDataProperties.m */,
+				788F20EA1C93F9DE00B0A86A /* Person.h */,
+				788F20EB1C93F9DE00B0A86A /* Person.m */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		788F20E31C93F92F00B0A86A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				788F20E21C93F92100B0A86A /* CoreData */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,8 +269,12 @@
 			files = (
 				788F20CE1C9328DA00B0A86A /* ViewController.m in Sources */,
 				788F20CB1C9328DA00B0A86A /* AppDelegate.m in Sources */,
+				788F20EF1C93F9DE00B0A86A /* Person.m in Sources */,
 				788F20C81C9328DA00B0A86A /* main.m in Sources */,
 				788F20D41C9328DA00B0A86A /* ReativeCocoaDemo.xcdatamodeld in Sources */,
+				788F20ED1C93F9DE00B0A86A /* Photos.m in Sources */,
+				788F20EE1C93F9DE00B0A86A /* Person+CoreDataProperties.m in Sources */,
+				788F20EC1C93F9DE00B0A86A /* Photos+CoreDataProperties.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

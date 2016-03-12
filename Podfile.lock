@@ -14,6 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.0.4)
   - AFNetworking/UIKit (3.0.4):
     - AFNetworking/NSURLSession
+  - AMap2DMap (3.3.0)
   - CocoaAsyncSocket (7.4.3):
     - CocoaAsyncSocket/All (= 7.4.3)
   - CocoaAsyncSocket/All (7.4.3):
@@ -179,12 +180,14 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0.4)
+  - AMap2DMap
   - MD5Digest (~> 1.1.0)
   - ReactiveCocoa (~> 2.5)
   - XMPPFramework (~> 3.6.6)
 
 SPEC CHECKSUMS:
   AFNetworking: a0075feb321559dc78d9d85b55d11caa19eabb93
+  AMap2DMap: e53461cdc345375e514579db17dbd721ff9ed9eb
   CocoaAsyncSocket: a18c75dca4b08723628a0bacca6e94803d90be91
   CocoaLumberjack: 628fca2e88ef06f7cf6817309aa405f325d9a6fa
   MD5Digest: fea371215507cfcdc3c9633d02cffc7fd075ebc3

@@ -36,21 +36,29 @@
     return _titleNetWorkStatus;
 }
 
-
+#pragma mark ----------- 网络监测工具
 -(void)observeNetWorking{
 
-         [[AFNetworkReachabilityManager sharedManager] setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
-             NSLog(@" start %zd",status);
-             if (status > 0) {
-                 [self.titleNetWorkStatus removeFromSuperview];
-             }else{
-
-                 [self.view addSubview:self.titleNetWorkStatus];
-
-             }
+    AFNetworkReachabilityManager *reachability = [AFNetworkReachabilityManager sharedManager];
 
 
-         }];
+    [reachability setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
+        NSLog(@" start %zd",status);
+        if (status > 0) {
+            [self.titleNetWorkStatus removeFromSuperview];
+        }else{
+
+            [self.view addSubview:self.titleNetWorkStatus];
+
+        }
+
+
+
+    }];
+
+    [reachability startMonitoring];
+
+
 
 
 }
