@@ -6,5 +6,8 @@
 target 'ReativeCocoaDemo' do
 pod 'ReactiveCocoa', '~> 2.5'
 pod 'AFNetworking', '~> 3.0.4'
+
+pod 'MD5Digest', '~> 1.1.0'
+pod 'XMPPFramework', '~> 3.6.6'
 end
 
