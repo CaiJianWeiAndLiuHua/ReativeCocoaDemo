@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '8601B5F9CBB133F1817D3587'
+               BlueprintIdentifier = '7D97ABE8E3BA7ABB1B1DF502'
                BlueprintName = 'MD5Digest'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libMD5Digest.a'>

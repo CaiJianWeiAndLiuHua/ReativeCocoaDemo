@@ -12,5 +12,6 @@ pod 'XMPPFramework', '~> 3.6.6'
 pod 'MBProgressHUD', '~> 0.9.2'
 pod 'MJRefresh'
 pod 'FMDB'
+pod 'SDWebImage'
 end
 

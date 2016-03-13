@@ -20,6 +20,7 @@
 		788F20ED1C93F9DE00B0A86A /* Photos.m in Sources */ = {isa = PBXBuildFile; fileRef = 788F20E71C93F9DE00B0A86A /* Photos.m */; };
 		788F20EE1C93F9DE00B0A86A /* Person+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 788F20E91C93F9DE00B0A86A /* Person+CoreDataProperties.m */; };
 		788F20EF1C93F9DE00B0A86A /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 788F20EB1C93F9DE00B0A86A /* Person.m */; };
+		78E7F9621C956B6500CA7F49 /* HttpAFHttpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E7F9611C956B6500CA7F49 /* HttpAFHttpViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,8 @@
 		788F20E91C93F9DE00B0A86A /* Person+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Person+CoreDataProperties.m"; sourceTree = "<group>"; };
 		788F20EA1C93F9DE00B0A86A /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		788F20EB1C93F9DE00B0A86A /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		78E7F9601C956B6500CA7F49 /* HttpAFHttpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpAFHttpViewController.h; sourceTree = "<group>"; };
+		78E7F9611C956B6500CA7F49 /* HttpAFHttpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpAFHttpViewController.m; sourceTree = "<group>"; };
 		AF73C0D84A6263D28060ABB6 /* Pods-ReativeCocoaDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReativeCocoaDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReativeCocoaDemo/Pods-ReativeCocoaDemo.release.xcconfig"; sourceTree = "<group>"; };
 		EA1A372A15008AB02A82B72B /* Pods-ReativeCocoaDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReativeCocoaDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReativeCocoaDemo/Pods-ReativeCocoaDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -159,8 +162,10 @@
 			children = (
 				788F20CC1C9328DA00B0A86A /* ViewController.h */,
 				788F20CD1C9328DA00B0A86A /* ViewController.m */,
+				78E7F9601C956B6500CA7F49 /* HttpAFHttpViewController.h */,
+				78E7F9611C956B6500CA7F49 /* HttpAFHttpViewController.m */,
 			);
-			name = Controller;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,6 +294,7 @@
 				788F20CB1C9328DA00B0A86A /* AppDelegate.m in Sources */,
 				788F20EF1C93F9DE00B0A86A /* Person.m in Sources */,
 				788F20C81C9328DA00B0A86A /* main.m in Sources */,
+				78E7F9621C956B6500CA7F49 /* HttpAFHttpViewController.m in Sources */,
 				788F20D41C9328DA00B0A86A /* ReativeCocoaDemo.xcdatamodeld in Sources */,
 				788F20ED1C93F9DE00B0A86A /* Photos.m in Sources */,
 				788F20EE1C93F9DE00B0A86A /* Person+CoreDataProperties.m in Sources */,

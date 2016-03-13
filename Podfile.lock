@@ -40,6 +40,9 @@ PODS:
   - ReactiveCocoa/no-arc (2.5)
   - ReactiveCocoa/UI (2.5):
     - ReactiveCocoa/Core
+  - SDWebImage (3.7.5):
+    - SDWebImage/Core (= 3.7.5)
+  - SDWebImage/Core (3.7.5)
   - XMPPFramework (3.6.6):
     - XMPPFramework/Authentication (= 3.6.6)
     - XMPPFramework/BandwidthMonitor (= 3.6.6)
@@ -191,6 +194,7 @@ DEPENDENCIES:
   - MD5Digest (~> 1.1.0)
   - MJRefresh
   - ReactiveCocoa (~> 2.5)
+  - SDWebImage
   - XMPPFramework (~> 3.6.6)
 
 SPEC CHECKSUMS:
@@ -203,6 +207,7 @@ SPEC CHECKSUMS:
   MD5Digest: fea371215507cfcdc3c9633d02cffc7fd075ebc3
   MJRefresh: 743e6404967d1c2c688472ea3ecfde247d872db4
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
+  SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
   XMPPFramework: b06c210b0b71c08aa41a646bffd2021fa43bb43b
 
 COCOAPODS: 0.39.0
