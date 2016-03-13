@@ -1,0 +1,30 @@
+//
+//  PrefixHeader.pch
+//  ReativeCocoaDemo
+//
+//  Created by CaixiaoLiu on 16/3/12.
+//  Copyright © 2016年 LH. All rights reserved.
+//
+
+
+
+
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#pragma mark ------------ object c to define  import oc
+
+#ifdef  __OBJC__
+#define RGBA(r,g,b,a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a/1.0]
+#import "AFNetworking.h"
+#import "MBProgressHUD.h"
+
+#endif
+
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */

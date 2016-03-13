@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "MBProgressHUD.h"
 @interface ViewController ()
 @property(nonatomic,strong) UILabel *titleNetWorkStatus;
 @end
@@ -16,10 +16,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+   
     [self observeNetWorking];
-
-
+   MBProgressHUD *hud =  [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    hud.labelText = @"change money  to going ???? xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
+    hud.color = RGBA(255, 100, 100, 0.5);
+    self.view.backgroundColor = RGBA(1, 1, 1, 1);
     // Do any additional setup after loading the view, typically from a nib.
 }
 

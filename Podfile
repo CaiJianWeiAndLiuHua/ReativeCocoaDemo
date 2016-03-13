@@ -9,6 +9,8 @@ pod 'AFNetworking', '~> 3.0.4'
 pod 'AMap2DMap'  
 pod 'MD5Digest', '~> 1.1.0'
 pod 'XMPPFramework', '~> 3.6.6'
-
+pod 'MBProgressHUD', '~> 0.9.2'
+pod 'MJRefresh'
+pod 'FMDB'
 end
 
